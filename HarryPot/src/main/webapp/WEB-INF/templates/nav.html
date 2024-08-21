@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <thymeleaf th:replace="header :: header"/>
+</head>
+<body>
+<header>
+    <nav class="navigation">
+        <a class="logo" href="/harryPotter"><img class="logo-img" src="/harryPotter/rsc/HPlogo.png" alt="hp"></a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="/harryPotter">Home</a></li>
+            <li class="nav-item"><a href="/harryPotter/character/list">Characters</a></li>
+            <li class="nav-item"><a href="/harryPotter/house/list">Houses</a></li>
+            <li class="nav-item"><a href="/harryPotter/book">Books</a></li>
+            <li class="nav-item"><a href="/harryPotter/spell">Spells</a></li>
+            <li class="nav-item"><a href="/harryPotter/event">Events</a></li>
+            <li class="nav-item"><a href="/harryPotter/location">Locations</a></li>
+        </ul>
+        <div class="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+
+</header>
+<script>
+    const menu = document.querySelector('.menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click', () => {
+        menu.classList.toggle('ativo');
+        navMenu.classList.toggle('ativo');
+    });
+</script>
+</body>
+</html>

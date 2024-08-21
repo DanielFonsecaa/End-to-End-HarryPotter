@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <thymeleaf th:replace="header :: header"/>
+</head>
+<body>
+
+<div th:replace="nav :: nav"></div>
+<h2>House List</h2>
+
+<div class="container">
+
+    <div class="card-container" th:each="house : ${houses}">
+        <div th:class="'house-card ' + ${house.name}">
+
+            <h1 class="text-p" th:text="${house.name}"></h1>
+            <br class="space">
+            <p class="text-p"><strong>Founder:</strong> <span th:text="${house.founder}"></span></p>
+            <p class="text-p"><strong>Ghost:</strong> <span th:text="${house.ghost}"></span></p>
+            <p class="text-p"><strong>Mascot:</strong> <span th:text="${house.mascot}"></span></p>
+            <p class="text-p"><strong>Colors:</strong> <span th:text="${house.colors}"></span></p>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

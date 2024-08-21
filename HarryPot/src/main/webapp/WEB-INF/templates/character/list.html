@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <thymeleaf th:replace="header :: header"/>
+</head>
+<body>
+
+<div th:replace="nav :: nav"></div>
+<h2>Character List</h2>
+<div class="container">
+
+
+    <div class="character-container" th:each="character : ${characters}">
+        <img class="character-img" th:src="@{${character.imageUrl}}" alt="Character Image">
+        <div class="character-card">
+            <p class="text-p"><strong>Name:</strong> <span th:text="${character.name}"></span></p>
+            <p class="text-p"><strong>Birthdate:</strong> <span th:text="${character.birthdate}"></span></p>
+            <p class="text-p"><strong>Gender:</strong> <span th:text="${character.gender}"></span></p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

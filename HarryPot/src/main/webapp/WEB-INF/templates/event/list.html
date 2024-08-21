@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <thymeleaf th:replace="header :: header"/>
+</head>
+<body>
+
+<div th:replace="nav :: nav"></div>
+<h2>Event List</h2>
+
+<div class="container">
+
+    <div th:each="event : ${events}" class="event-container">
+        <div class="event-card">
+            <p class="text-p"><strong>Title:</strong> <span th:text="${event.title}"></span></p>
+            <p class="text-p"><strong>Date:</strong> <span th:text="${event.date}"></span></p>
+            <p class="text-p"><strong>Description:</strong> <span th:text="${event.description}"></span></p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
