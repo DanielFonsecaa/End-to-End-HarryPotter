@@ -11,7 +11,7 @@
             To keep the database open, DB_CLOSE_DELAY=-1 is required
         -->
         <property name="driverClassName" value="org.h2.Driver"/>
-        <property name="url" value="jdbc:h2:mem:javabank;DB_CLOSE_DELAY=-1"/>
+        <property name="url" value="jdbc:h2:mem:harrypotter;DB_CLOSE_DELAY=-1"/>
         <property name="username" value="sa"/>
         <property name="password" value=""/>
     </bean>
