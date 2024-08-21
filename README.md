@@ -2,14 +2,14 @@
 <br/>
 <div align="center">
 <a href="https://github.com/ShaanCoding/ReadME-Generator">
-<img src="https://picsum.photos/400" alt="Logo" width="80" height="80">
+<img src="https://github.com/user-attachments/assets/f226dc93-8bb4-4a31-8de4-7131dbd95990" alt="Logo" width="80" height="80">
 </a>
 <h3 align="center">End to End - HarryPotter</h3>
 <p align="center">
 Amazing Harry Potter page
 
 
-  
+
 
 
 </p>
@@ -17,7 +17,11 @@ Amazing Harry Potter page
 
 ## About The Project
 
-![Product Screenshot](https://picsum.photos/1920/1080)
+![House](https://github.com/user-attachments/assets/8ed300be-3afb-43e6-82c8-de31f6e19e88)
+
+![location](https://github.com/user-attachments/assets/3566ab54-6563-44c0-b223-ccd86eeb29f4)
+
+![spell](https://github.com/user-attachments/assets/d5d119f5-1a93-4e8c-a496-03a9d921dd62)
 
 This project, developed with Java, Spring, Hibernate, and other technologies, aims to demonstrate a complete and functional web application inspired by the Harry Potter universe. The application retrieves data from a MySQL database using Hibernate, offering an intuitive interface built with HTML, CSS, and Thymeleaf to explore characters, houses, events, locations, and books from the saga. The robust architecture, based on Spring, ensures the scalability and maintainability of the system.
 ### Built With
