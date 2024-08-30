@@ -2,6 +2,7 @@ package io.codeforall.bootcamp.harrypotter.controller.web;
 
 import io.codeforall.bootcamp.harrypotter.persistence.model.Character;
 import io.codeforall.bootcamp.harrypotter.services.CharacterService;
+import io.codeforall.bootcamp.harrypotter.services.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +19,7 @@ import java.util.List;
 @RequestMapping("/character")
 public class CharacterController {
 
+
     private CharacterService characterService;
 
     /**
@@ -26,18 +28,10 @@ public class CharacterController {
      * @param characterService the character service to set
      */
     @Autowired
-    public void setCustomerService(CharacterService characterService) {
+    public void setCharacterService(CharacterService characterService) {
         this.characterService = characterService;
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = {"/home"})
-    public String home(Model model) {
-        List<Character> characters = characterService.list();
-
-        model.addAttribute("characters", characters);
-
-        return "character/home";
-    }
 
 
     /**

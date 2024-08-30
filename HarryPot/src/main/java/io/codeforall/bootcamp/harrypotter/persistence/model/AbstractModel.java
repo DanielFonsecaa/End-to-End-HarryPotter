@@ -50,12 +50,6 @@ public abstract class AbstractModel implements Model {
     }
 
     /**
-     * Gets the model creation time
-     *
-     * @return the model creation time
-     */
-
-    /**
      * @see Object#toString()
      */
     @Override

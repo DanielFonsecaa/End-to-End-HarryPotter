@@ -16,6 +16,6 @@ public class MainController {
      */
     @RequestMapping("/")
     public String home() {
-        return "redirect:/character/home";
+        return "redirect:/home";
     }
 }

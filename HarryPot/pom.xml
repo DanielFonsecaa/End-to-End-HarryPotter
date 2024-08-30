@@ -2,11 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.codeforall.bootcamp.javabank</groupId>
-    <artifactId>javabank-step13-rest</artifactId>
+    <groupId>io.codeforall.bootcamp.harrypotter</groupId>
+    <artifactId>HarryPotter</artifactId>
     <version>0.0.1</version>
     <packaging>war</packaging>
-    <name>Java Bank Webapp</name>
+    <name>Harry Potter Webapp</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -81,12 +81,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-c3p0</artifactId>
-            <version>5.3.6.Final</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
             <artifactId>hibernate-jpa-2.1-api</artifactId>
             <version>1.0.0.Final</version>
@@ -97,6 +91,7 @@
             <artifactId>h2</artifactId>
             <version>1.4.196</version>
         </dependency>
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -157,7 +152,7 @@
 
     <build>
 
-        <finalName>Java Bank</finalName>
+        <finalName>Harry Potter</finalName>
 
         <plugins>
             <plugin>

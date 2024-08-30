@@ -7,7 +7,7 @@ INSERT INTO house (Name, Founder, Ghost, Mascot, Colors) VALUES
 
 DELETE FROM character;
 INSERT INTO character (Name, house_id, Birthdate, Gender, image) VALUES
-('Harry Potter', 1, '1980-07-31', 'Male', 'https://ik.imagekit.io/hpapi/harry.jpg'),
+('Harry Potter', 1, '1980-07-31', 'Male', 'https://ik.imagekit.io/hpapi/harry.jpg')
 ('Hermione Granger', 1, '1979-09-19', 'Female','https://ik.imagekit.io/hpapi/hermione.jpeg'),
 ('Ron Weasley', 1, '1980-03-01', 'Male','https://ik.imagekit.io/hpapi/ron.jpg');
 

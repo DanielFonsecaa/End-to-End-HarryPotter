@@ -1,6 +1,6 @@
 package io.codeforall.bootcamp.harrypotter.controller.web;
 
-import io.codeforall.bootcamp.harrypotter.persistence.model.Spell;
+import io.codeforall.bootcamp.harrypotter.persistence.model.Book;
 import io.codeforall.bootcamp.harrypotter.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 /**
- * Controller responsible for rendering {@link Spell} related views
+ * Controller responsible for rendering {@link Book} related views
  */
 @Controller
 @RequestMapping("/book")
