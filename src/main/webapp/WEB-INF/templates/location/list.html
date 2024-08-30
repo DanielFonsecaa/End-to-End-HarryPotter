@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <thymeleaf th:replace="header :: header"/>
+</head>
+<body>
+
+<div th:replace="nav :: nav"></div>
+<h2>Location List</h2>
+
+<div class="container">
+
+    <div th:each="location : ${locations}" class="location-container">
+        <div class="location-card">
+            <p class="text-w"><strong>Name:</strong> <span th:text="${location.name}"></span></p>
+            <p class="text-w"><strong>Description:</strong> <span th:text="${location.description}"></span></p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+

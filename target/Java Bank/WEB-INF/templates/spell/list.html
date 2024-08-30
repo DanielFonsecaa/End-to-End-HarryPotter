@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <thymeleaf th:replace="header :: header"/>
+</head>
+<body>
+
+<div th:replace="nav :: nav"></div>
+<h2>Spells List</h2>
+<div class="container">
+
+    <div th:each="spell : ${spells}" class="spell-container">
+        <div class="spell-card">
+            <p class="text-p"><strong>Name:</strong> <span th:text="${spell.name}"></span></p>
+            <p class="text-p"><strong>Effect:</strong> <span th:text="${spell.effect}"></span></p>
+            <p class="text-p"><strong>Incantation:</strong> <span th:text="${spell.incantation}"></span></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

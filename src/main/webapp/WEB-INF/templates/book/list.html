@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <thymeleaf th:replace="header :: header"/>
+</head>
+<body>
+
+<div th:replace="nav :: nav"></div>
+<h2>Books List</h2>
+
+<div class="container">
+    <div th:each="book : ${books}" class="book-container">
+        <div class="book-card">
+            <p class="text-p"><strong>Title:</strong> <span th:text="${book.title}"></span></p>
+            <p class="text-p"><strong>Release Date:</strong> <span th:text="${book.releaseDate}"></span></p>
+            <p class="text-p"><strong>Author:</strong> <span th:text="${book.author}"></span></p>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
+
